@@ -667,7 +667,10 @@ input{
 
 .buttons-kassa{
   display: flex;
+  flex-direction: column;
   gap: 2rem;
+  max-width: max-content;
+  margin: auto;
 }
 
 /* ------------------------------- cart modal ------------------------------- */
@@ -807,6 +810,12 @@ input{
 
   table td:nth-child(2), .th td:nth-child(2){
     display: table-cell;
+  }
+
+  .buttons-kassa{
+    flex-direction: row;
+    max-width: max-content;
+    margin: 0;
   }
 }
 
