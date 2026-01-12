@@ -81,6 +81,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  window.addEventListener('resize', () => {
+    const checkoutSum = document.querySelector('.checkout-sum');
+    if(checkoutSum){
+      if (window.innerWidth > 991){
+      checkoutSum.setAttribute('colspan', "5");
+      }
+      else{
+        checkoutSum.setAttribute('colspan', "3");
+      }
+    }
+  });
+
   /* ---------------------------- Product carousel ---------------------------- */
   carouselButtons.forEach(button => {
     button.addEventListener('click', () =>{
