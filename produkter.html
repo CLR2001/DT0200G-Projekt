@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLR - Produkter</title>
+  <!--CSS & JavaScript-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/webshop.js" defer></script>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CLR Kort" />
+  <link rel="manifest" href="/media/favicon/site.webmanifest" />
+  <!--Fonts & Icons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="index.html">
+        <img src="media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp">
+      </a>
+      <nav data-open="false">
+        <button type="button" class="hamburger-button">
+          <span class="hamburger-line hamburger-line1"></span>
+          <span class="hamburger-line hamburger-line2"></span>
+          <span class="hamburger-line hamburger-line3"></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="produkter.html">Produkter</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="cart-button-container">
+        <button type="button" class="cart-button">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </button>
+        <div class="cart-modal">
+          <span class="cart-modal-background"></span>
+          <div class="basket">
+            <ul id="basket">
+              
+            </ul>
+            <a href="kassa.html" class="checkout-button green-button">Till kassan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content main-content-produkter">
+      <h1>Produkter</h1>
+
+      <section class="product-card">
+        <div>
+          <h2>Monarchs Purple</h2>
+          <p>149 kr</p>
+          <a href="produkter/produkt1.html">Besök produkt</a>
+        </div>
+        <div class="product-card-button">
+          <button onclick="addToBasket(this, '1','Monarchs Purple', 149, 'media/produkt1/fram.png', notify=true)" class="green-button">Köp</button>
+        </div>
+        <div class="card-image-container card-image-flipped product-card-image">
+          <a href="produkter/produkt1.html">
+            <picture>
+              <source type="image/avif" srcset="media/produkt1/tilt.avif">
+              <source type="image/webp" srcset="media/produkt1/tilt.webp">
+              <img src="media/produkt1/tilt.png" alt="Kortlek: Monarchs Purple" class="card-tilt" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div>
+          <h2>Odyssey V3 Aether Edition</h2>
+          <p>149 kr</p>
+          <a href="produkter/produkt2.html">Besök produkt</a>
+        </div>
+        <div class="product-card-button">
+          <button onclick="addToBasket(this, '2','Odyssey V3 Aether Edition', 149, 'media/produkt2/fram.png', notify=true)" class="green-button">Köp</button>
+        </div>
+        <div class="card-image-container card-image-flipped product-card-image">
+          <a href="produkter/produkt2.html">
+            <picture>
+              <source type="image/avif" srcset="media/produkt2/tilt.avif">
+              <source type="image/webp" srcset="media/produkt2/tilt.webp">
+              <img src="media/produkt2/tilt.png" alt="Kortlek: Odyssey V3 Aether Edition" class="card-tilt " loading="lazy">
+            </picture>
+          </a> 
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div>
+          <h2>Bicycle Poker Dogs V2</h2>
+          <p>199 kr</p>
+          <a href="produkter/produkt3.html">Besök produkt</a>
+        </div> 
+        <div class="product-card-button">
+          <button onclick="addToBasket(this, '3','Bicycle Poker Dogs V2', 199, 'media/produkt3/fram.png', notify=true)" class="green-button">Köp</button>
+        </div>
+        <div class="card-image-container card-image-flipped product-card-image">
+          <a href="produkter/produkt3.html">
+            <picture>
+              <source type="image/avif" srcset="media/produkt3/tilt.avif">
+              <source type="image/webp" srcset="media/produkt3/tilt.webp">
+              <img src="media/produkt3/tilt.png" alt="Kortlek: Bicycle Poker Dogs V2" class="card-tilt" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div>
+          <h2>Avengers: Infinity Saga Playing Cards</h2>
+          <p>179 kr</p>
+          <a href="produkter/produkt4.html">Besök produkt</a>
+        </div>
+        <div class="product-card-button">
+          <button onclick="addToBasket(this, '4','Avengers: Infinity Saga Playing Cards', 179, 'media/produkt4/fram.png', notify=true)" class="green-button">Köp</button>
+        </div>
+        <div class="card-image-container card-image-flipped product-card-image">
+          <a href="produkter/produkt4.html">
+            <picture>
+              <source type="image/avif" srcset="media/produkt4/tilt.avif">
+              <source type="image/webp" srcset="media/produkt4/tilt.webp">
+              <img src="media/produkt4/tilt.png" alt="Kortlek: Avengers: Infinity Saga Playing Cards" class="card-tilt" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div>
+          <h2>Butterfly Summer Edition Marked</h2>
+          <p>249 kr</p>
+          <a href="produkter/produkt5.html">Besök produkt</a>
+        </div>
+        <div class="product-card-button">
+          <button onclick="addToBasket(this, '5','Butterfly Summer Edition Marked', 249, 'media/produkt5/fram.png', notify=true)" class="green-button">Köp</button>
+        </div>
+        <div class="card-image-container card-image-flipped product-card-image">
+          <a href="produkter/produkt5.html">
+            <picture>
+              <source type="image/avif" srcset="media/produkt5/tilt.avif">
+              <source type="image/webp" srcset="media/produkt5/tilt.webp">
+              <img src="media/produkt6/tilt.png" alt="Kortlek: Butterfly Summer Edition Marked" class="card-tilt" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div>
+          <h2>Providence by The 1914</h2>
+          <p>219 kr</p>
+          <a href="produkter/produkt6.html">Besök produkt</a>
+        </div>
+        <div class="product-card-button">
+          <button onclick="addToBasket(this, '6','Providence by The 1914', 219, 'media/produkt6/fram.png', notify=true)" class="green-button">Köp</button>
+        </div>
+        <div class="card-image-container card-image-flipped product-card-image">
+          <a href="produkter/produkt6.html">
+            <picture>
+              <source type="image/avif" srcset="media/produkt6/tilt.avif">
+              <source type="image/webp" srcset="media/produkt6/tilt.webp">
+              <img src="media/produkt6/tilt.png" alt="Kortlek: Providence by The 1914" class="card-tilt" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="omoss.html">Om oss</a>
+      <a href="kontakt.html">Kontakt</a>
+      <p>CLR Kortlekar</p>
+      <a href="index.html"><img src="media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp"></a>
+    </div>
+  </footer>
+  <div class="notify-background">
+    <div class="notify-box" id="notify"></div>
+  </div>
+</body>
+</html>

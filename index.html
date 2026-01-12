@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLR Kortlekar</title>
+  <!--CSS & JavaScript-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/webshop.js" defer></script>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CLR Kort" />
+  <link rel="manifest" href="/media/favicon/site.webmanifest" />
+  <!--Fonts & Icons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="index.html">
+        <img src="media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp">
+      </a>
+      <nav data-open="false">
+        <button type="button" class="hamburger-button">
+          <span class="hamburger-line hamburger-line1"></span>
+          <span class="hamburger-line hamburger-line2"></span>
+          <span class="hamburger-line hamburger-line3"></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="produkter.html">Produkter</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="cart-button-container">
+        <button type="button" class="cart-button">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </button>
+        <div class="cart-modal">
+          <span class="cart-modal-background"></span>
+          <div class="basket">
+            <ul id="basket">
+              
+            </ul>
+            <a href="kassa.html" class="checkout-button green-button">Till kassan</a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content main-content-index">
+      <section class="hero-section">
+        <div class="hero-section-content">
+          <h1>CLR <br>Kortlekar</h1>
+          <p>Kortlekar för alla tillfällen. Standard, exklusiva och samlarobjekt.</p>
+          <div class="card-image-container hero-image">
+            <picture>
+              <source type="image/avif" srcset="media/produkt6/tilt-left.avif">
+              <source type="image/webp" srcset="media/produkt6/tilt-left.webp">
+              <img src="media/produkt6/tilt-left.png" alt="Kortlek: Providence by The 1914" class="card-tilt">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-card">
+        <h2>Kända märken</h2>
+        <ul>
+          <li>Bicycle</li>
+          <li>Theory11</li>
+          <li>Cards by STFN</li>
+        </ul>
+        <div class="card-image-container card-image-flipped">
+          <picture>
+            <source type="image/avif" srcset="media/produkt4/tilt.avif">
+            <source type="image/webp" srcset="media/produkt4/tilt.webp">
+            <img src="media/produkt4/tilt.png" alt="Kortlek: Avengers: Infinity Saga Playing Cards" class="card-tilt" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="info-card info-card-uneven">
+        <h2>Fri frakt</h2>
+        <ul>
+          <li>Hela Sverige</li>
+          <li>PostNord</li>
+        </ul>
+        <div class="card-image-container card-image-uneven">
+          <picture>
+            <source type="image/avif" srcset="media/produkt1/tilt-left.avif">
+            <source type="image/webp" srcset="media/produkt1/tilt-left.webp">
+            <img src="media/produkt1/tilt-left.png" alt="Kortlek: Monarchs Purple" class="card-tilt" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="info-card">
+        <h2>Support för dig</h2>
+        <ul>
+          <li>Telefon</li>
+          <li>Chatt</li>
+          <li>E-post</li>
+          <li><a href="kontakt.html">Kontakt oss här</a></li>
+        </ul>
+        <div class="card-image-container card-image-flipped">
+          <picture>
+            <source type="image/avif" srcset="media/produkt2/tilt.avif">
+            <source type="image/webp" srcset="media/produkt2/tilt.webp">
+            <img src="media/produkt2/tilt.png" alt="Kortlek: Odyssey V3 Aether Edition" class="card-tilt" loading="lazy">
+          </picture>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="omoss.html">Om oss</a>
+      <a href="kontakt.html">Kontakt</a>
+      <p>CLR Kortlekar</p>
+      <a href="index.html"><img src="media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp"></a>
+    </div>
+  </footer>
+  <div class="notify-background">
+    <div class="notify-box" id="notify"></div>
+  </div>
+</body>
+</html>

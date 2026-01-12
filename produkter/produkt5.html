@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLR Kortlekar</title>
+  <!--CSS & JavaScript-->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/webshop.js" defer></script>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CLR Kort" />
+  <link rel="manifest" href="/media/favicon/site.webmanifest" />
+  <!--Fonts & Icons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="/index.html">
+        <img src="/media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp">
+      </a>
+      <nav data-open="false">
+        <button type="button" class="hamburger-button">
+          <span class="hamburger-line hamburger-line1"></span>
+          <span class="hamburger-line hamburger-line2"></span>
+          <span class="hamburger-line hamburger-line3"></span>
+        </button>
+        <ul>
+          <li><a href="/index.html">Startsida</a></li>
+          <li><a href="/produkter.html">Produkter</a></li>
+          <li><a href="/omoss.html">Om oss</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="cart-button-container">
+        <button type="button" class="cart-button">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </button>
+        <div class="cart-modal">
+          <span class="cart-modal-background"></span>
+          <div class="basket">
+            <ul id="basket">
+              
+            </ul>
+            <a href="/kassa.html" class="checkout-button green-button">Till kassan</a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content main-content-produkt">
+      <div class="breadcrumb">
+        <a href="/produkter.html">Produkter</a><p>/</p><p>Butterfly Summer Edition Marked</p>
+      </div>
+      <h1>Butterfly Summer Edition Marked</h1>
+
+      <div class="product-image-section">
+        <div class="carousel" data-carousel>
+          <button class="button-prev" data-carousel-button="prev">
+            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+          </button>
+          <button class="button-next" data-carousel-button="next">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
+          
+          <ul data-slides>
+            <li class="slide" data-active-slide>
+              <picture>
+                <source type="image/avif" srcset="/media/produkt5/fram.avif">
+                <source type="image/webp" srcset="/media/produkt5/fram.webp">
+                <img src="/media/produkt5/fram.jpg" alt="Butterfly Summer Edition Marked behållare framsida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt5/bak.avif">
+                <source type="image/webp" srcset="/media/produkt5/bak.webp">
+                <img src="/media/produkt5/bak.jpg" alt="Butterfly Summer Edition Marked behållare baksida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt5/kort-fram.avif">
+                <source type="image/webp" srcset="/media/produkt5/kort-fram.webp">
+                <img src="/media/produkt5/kort-fram.jpg" alt="Butterfly Summer Edition Marked kort framsida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt5/kort-bak.avif">
+                <source type="image/webp" srcset="/media/produkt5/kort-bak.webp">
+                <img src="/media/produkt5/kort-bak.jpg" alt="Butterfly Summer Edition Marked kort baksida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <div class="indicator-container" data-indicators>
+            <span class="indicator" data-active-indicator></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+      </div>
+      <button onclick="addToBasket(this, '5','Butterfly Summer Edition Marked', 249, '/media/produkt5/fram.png', notify=true)" class="product-buy-button green-button">Köp</button>
+      <div class="product-info">
+        <section>
+          <h2>Butterfly Summer Edition Marked – Sommarens mest magiska kortlek</h2>
+          <p>
+            Butterfly Playing Cards har tagit trollerivärlden med storm, och Summer Edition är den mest färgstarka utgåvan hittills. Designad av Stefan Olschewski, kombinerar denna kortlek en livlig estetik med ett av världens mest avancerade märkningssystem, dolt mitt i den vackra fjärilsdesignen.
+          </p>
+        </section>
+
+        <section>
+          <h3>Design och Estetik</h3>
+          <ul>
+            <li>
+              <b>Asken:</b> En ljus och somrig ask som strålar i gult och grönt. Den har en minimalistisk men elegant finish som direkt för tankarna till en blomstrande sommaräng.
+            </li>
+            <li>
+              <b>Korten:</b> Baksidan pryds av det ikoniska Butterfly-mönstret i en unik färgskala för Summer Edition. Designen är kantlös (borderless), vilket gör att "fans" och spridningar ser helt sömlösa och organiska ut.
+            </li>
+            <li>
+              <b>Markeringar:</b> Detta är en "Marked Deck". Det unika systemet gör att du kan läsa av både värde och svit direkt från baksidan, trots att designen ser helt normal ut för det otränade ögat.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Kvalitet och Känsla</h3>
+          <p>
+            Korten är tryckta i Belgien av Cartamundi på deras hyllade Slimline Stock, vilket är en favorit bland proffsen:
+          </p>
+          <ul>
+            <li>
+              <b>B9 True Linen Finish:</b> Ger korten en fantastisk textur och mjukhet direkt ur asken. De är optimerade för både tekniska trolleritrick och smidiga blandningar.
+            </li>
+            <li>
+              <b>Slimline Stock:</b> Korten är märkbart tunnare än standardkort, vilket ger en otrolig flexibilitet och gör det lättare att utföra avancerade grepp.
+            </li>
+            <li>
+              <b>Precision Cut:</b> Den kantlösa designen kräver perfekt skärning, och Butterfly-serien är känd för sin extrema precision som underlättar tekniker som "Faro Shuffles".
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Varför välja Butterfly Summer Edition</h3>
+          <p>
+            Oavsett om du är en hängiven magiker eller en samlare av vackra kortlekar, är Butterfly Summer Edition ett måste. Det är ett kraftfullt verktyg för mentalism och kortmagi, samtidigt som den ljusa designen gör den till den perfekta kortleken att plocka fram under utomhusfikan eller sommarens spelkvällar.
+          </p>
+        </section>
+
+        <section>
+          <h3>Specifikationer</h3>
+          <ul>
+            <li>
+              <b>Märke:</b> Cards by STFN (Stefan Olschewski)
+            </li>
+            <li>
+              <b>Tryck:</b> Cartamundi (Belgien)
+            </li>
+            <li>
+              <b>Typ:</b> Marked Deck (Märkt kortlek)
+            </li>
+            <li>
+              <b>Papper:</b> Slimline Stock med B9 Finish
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source type='video/webm; codecs="av01.0.05M.08"' src="/media/produkt5/video1.webm">
+          <source type="video/mp4" src="/media/produkt5/video1.mp4">
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="/omoss.html">Om oss</a>
+      <a href="/kontakt.html">Kontakt</a>
+      <p>CLR Kortlekar</p>
+      <a href="/index.html"><img src="/media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp"></a>
+    </div>
+  </footer>
+  <div class="notify-background">
+    <div class="notify-box" id="notify"></div>
+  </div>
+</body>
+</html>

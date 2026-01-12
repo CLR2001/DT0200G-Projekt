@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLR Kortlekar</title>
+  <!--CSS & JavaScript-->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/webshop.js" defer></script>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CLR Kort" />
+  <link rel="manifest" href="/media/favicon/site.webmanifest" />
+  <!--Fonts & Icons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="/index.html">
+        <img src="/media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp">
+      </a>
+      <nav data-open="false">
+        <button type="button" class="hamburger-button">
+          <span class="hamburger-line hamburger-line1"></span>
+          <span class="hamburger-line hamburger-line2"></span>
+          <span class="hamburger-line hamburger-line3"></span>
+        </button>
+        <ul>
+          <li><a href="/index.html">Startsida</a></li>
+          <li><a href="/produkter.html">Produkter</a></li>
+          <li><a href="/omoss.html">Om oss</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="cart-button-container">
+        <button type="button" class="cart-button">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </button>
+        <div class="cart-modal">
+          <span class="cart-modal-background"></span>
+          <div class="basket">
+            <ul id="basket">
+              
+            </ul>
+            <a href="/kassa.html" class="checkout-button green-button">Till kassan</a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content main-content-produkt">
+      <div class="breadcrumb">
+        <a href="/produkter.html">Produkter</a><p>/</p><p>Bicycle Poker Dogs V2</p>
+      </div>
+      <h1>Bicycle Poker Dogs V2</h1>
+
+      <div class="product-image-section">
+        <div class="carousel" data-carousel>
+          <button class="button-prev" data-carousel-button="prev">
+            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+          </button>
+          <button class="button-next" data-carousel-button="next">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
+          
+          <ul data-slides>
+            <li class="slide" data-active-slide>
+              <picture>
+                <source type="image/avif" srcset="/media/produkt3/fram.avif">
+                <source type="image/webp" srcset="/media/produkt3/fram.webp">
+                <img src="/media/produkt3/fram.jpg" alt="Bicycle Poker Dogs V2 behållare framsida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt3/bak.avif">
+                <source type="image/webp" srcset="/media/produkt3/bak.webp">
+                <img src="/media/produkt3/bak.jpg" alt="Bicycle Poker Dogs V2 behållare baksida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt3/sida1.avif">
+                <source type="image/webp" srcset="/media/produkt3/sida1.webp">
+                <img src="/media/produkt3/sida1.jpg" alt="Bicycle Poker Dogs V2 kort behållare från sidan" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt3/sida2.avif">
+                <source type="image/webp" srcset="/media/produkt3/sida2.webp">
+                <img src="/media/produkt3/sida2.jpg" alt="Bicycle Poker Dogs V2 behållare från sidan" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <div class="indicator-container" data-indicators>
+            <span class="indicator" data-active-indicator></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+      </div>
+      <button onclick="addToBasket(this, '3','Bicycle Poker Dogs V2', 199, '/media/produkt3/fram.png', notify=true)" class="product-buy-button green-button">Köp</button>
+      <div class="product-info">
+        <section>
+          <h2>Bicycle Poker Dogs V2 – En charmig hyllning till människans bästa vän</h2>
+          <p>
+            Glöm de stela kungarna och damerna – i Bicycle Poker Dogs V2 är det fyrbenta vänner som tar plats vid spelbordet. 
+            Denna uppföljare till den populära originalversionen kombinerar den klassiska Bicycle-kvaliteten med handillustrerade motiv som garanterat lockar fram ett leende under nästa spelkväll.
+          </p>
+        </section>
+
+        <section>
+          <h3>Design och Estetik</h3>
+          <ul>
+            <li>
+              <b>Asken:</b> En färgstark och inbjudande ask som sätter tonen direkt. Den pryds av en av de karaktärsfulla hundarna och bär det välkända Bicycle-sigillet, vilket garanterar äkthet och kvalitet.
+            </li>
+            <li>
+              <b>Korten:</b> Varje klätt kort (knekt, dam, kung) har en unik illustration av en hundras klädd i kungliga kläder. Här hittar du allt från stolta bulldogg-kungar till eleganta pudel-damer.
+            </li>
+            <li>
+              <b>Baksidan:</b> En klassisk Bicycle-inspirerad design med diskreta hunddetaljer invävda i det symmetriska mönstret, vilket behåller en traditionell känsla för både magi och spel.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Kvalitet och Känsla</h3>
+          <p>
+            Korten är tillverkade i USA av United States Playing Card Company (USPCC) enligt högsta spelstandard:
+          </p>
+          <ul>
+            <li>
+              <b>Air-Cushion Finish:</b> Den patenterade ytbehandlingen som gör att korten glider perfekt mot varandra – idealiskt för smidig blandning och professionell hantering.
+            </li>
+            <li>
+              <b>Classic Stock:</b> Tryckta på Bicycle-papper av standardkvalitet för den rätta spänsten, hållbarheten och den välkända "Bicycle-känslan".
+            </li>
+            <li>
+              <b>Lättlästa:</b> Trots de anpassade illustrationerna är sifferkorten tydliga och lätta att läsa, vilket gör dem perfekta för seriösa spel som Poker eller Bridge.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Varför välja Bicycle Poker Dogs V2</h3>
+          <p>
+            Detta är den perfekta kortleken för hundälskaren eller samlaren som vill ha något unikt men ändå funktionellt. 
+            Den bryter av mot mer traditionella kortlekar och tillför en lättsam och humoristisk stämning till spelbordet, samtidigt som den bibehåller den tekniska kvalitet som proffsen kräver.
+          </p>
+        </section>
+
+        <section>
+          <h3>Specifikationer</h3>
+          <ul>
+            <li>
+              <b>Märke:</b> Bicycle (USPCC)
+            </li>
+            <li>
+              <b>Storlek:</b> Poker size
+            </li>
+            <li>
+              <b>Finish:</b> Air-Cushion Finish
+            </li>
+            <li>
+              <b>Innehåll:</b> 52 kort + anpassade jokrar
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source type='video/webm; codecs="av01.0.05M.08"' src="/media/produkt3/video1.webm">
+          <source type="video/mp4" src="/media/produkt3/video1.mp4">
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="/omoss.html">Om oss</a>
+      <a href="/kontakt.html">Kontakt</a>
+      <p>CLR Kortlekar</p>
+      <a href="/index.html"><img src="/media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp"></a>
+    </div>
+  </footer>
+  <div class="notify-background">
+    <div class="notify-box" id="notify"></div>
+  </div>
+</body>
+</html>

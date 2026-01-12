@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLR Kortlekar</title>
+  <!--CSS & JavaScript-->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/webshop.js" defer></script>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CLR Kort" />
+  <link rel="manifest" href="/media/favicon/site.webmanifest" />
+  <!--Fonts & Icons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="/index.html">
+        <img src="/media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp">
+      </a>
+      <nav data-open="false">
+        <button type="button" class="hamburger-button">
+          <span class="hamburger-line hamburger-line1"></span>
+          <span class="hamburger-line hamburger-line2"></span>
+          <span class="hamburger-line hamburger-line3"></span>
+        </button>
+        <ul>
+          <li><a href="/index.html">Startsida</a></li>
+          <li><a href="/produkter.html">Produkter</a></li>
+          <li><a href="/omoss.html">Om oss</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="cart-button-container">
+        <button type="button" class="cart-button">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </button>
+        <div class="cart-modal">
+          <span class="cart-modal-background"></span>
+          <div class="basket">
+            <ul id="basket">
+              
+            </ul>
+            <a href="/kassa.html" class="checkout-button green-button">Till kassan</a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content main-content-produkt">
+      <div class="breadcrumb">
+        <a href="/produkter.html">Produkter</a><p>/</p><p>Odyssey V3 Aether Edition</p>
+      </div>
+      <h1>Odyssey V3 Aether Edition</h1>
+
+      <div class="product-image-section">
+        <div class="carousel" data-carousel>
+          <button class="button-prev" data-carousel-button="prev">
+            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+          </button>
+          <button class="button-next" data-carousel-button="next">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
+          
+          <ul data-slides>
+            <li class="slide" data-active-slide>
+              <picture>
+                <source type="image/avif" srcset="/media/produkt2/fram.avif">
+                <source type="image/webp" srcset="/media/produkt2/fram.webp">
+                <img src="/media/produkt2/fram.jpg" alt="Odyssey V3 Aether Edition behållare framsida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt2/bak.avif">
+                <source type="image/webp" srcset="/media/produkt2/bak.webp">
+                <img src="/media/produkt2/bak.jpg" alt="Odyssey V3 Aether Edition behållare baksida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt2/kort-fram.avif">
+                <source type="image/webp" srcset="/media/produkt2/kort-fram.webp">
+                <img src="/media/produkt2/kort-fram.jpg" alt="Odyssey V3 Aether Edition kort framsida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+            <li class="slide">
+              <picture>
+                <source type="image/avif" srcset="/media/produkt2/kort-bak.avif">
+                <source type="image/webp" srcset="/media/produkt2/kort-bak.webp">
+                <img src="/media/produkt2/kort-bak.jpg" alt="Odyssey V3 Aether Edition kort baksida" class="card-tilt" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+          <div class="indicator-container" data-indicators>
+            <span class="indicator" data-active-indicator></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+      </div>
+      <button onclick="addToBasket(this, '2','Odyssey V3 Aether Edition', 149, '/media/produkt2/fram.png', notify=true)" class="product-buy-button green-button">Köp</button>
+      <div class="product-info">
+        <section>
+          <h2>Odyssey V3 Aether Edition – En resa genom rymd och estetik</h2>
+          <p>
+            Odyssey V3 (Aether Edition) är raka motsatsen till den klassiska elegansen hos Monarchs. 
+            Där Monarchs är traditionell och kunglig, är Odyssey modern, minimalistisk och futuristisk. 
+            Inspirerad av kosmos och nebulosor är Aether Edition skapad för att fascinera vid varje rörelse, 
+            vilket gör den till en favorit inom <b>cardistry</b>.
+          </p>
+        </section>
+        
+        <section>
+          <h3>Design och Estetik</h3>
+          <ul>
+            <li>
+              <b>Asken:</b> Till skillnad från tidigare versioner har Aether Edition en ask med en mörk, 
+              rymdinspirerad design. Den saknar folie men har en matt finish som ger ett modernt och rent intryck, 
+              vilket speglar kortlekens minimalistiska kärna.
+            </li>
+            <li>
+              <b>Korten:</b> Baksidan är seriens signum: en diagonal vit linje som skär genom en vacker lila och blå nebulosa. 
+              Denna design är optimerad för "fanning" och snabba rörelser, där de vita linjerna skapar fantastiska geometriska mönster i luften.
+            </li>
+            <li>
+              <b>Minimalistiska detaljer:</b> Aether Edition har helt anpassade (custom) klädda kort, men i en extremt förenklad stil. 
+              Sifferkorten och de minimalistiska sviterna (hjärter, spader etc.) ger kortleken en unik, nästan arkitektonisk känsla.
+          </ul>
+        </section>
+        
+        <section>
+          <h3>Kvalitet och Känsla</h3>
+          <p>
+            Odyssey-serien är känd för sin unika känsla, som skiljer sig från vanliga USPCC-kort:
+          </p>
+          <ul>
+            <li>
+              <b>Luxury Paper Stock:</b> Tryckt på ett exklusivt papper som är något tunnare och mer flexibelt än standardkort, vilket gör att de känns "inkörda" direkt ur asken.
+            </li>
+            <li>
+              <b>Magic Finish:</b> Ytan är behandlad för att vara extremt hal och lätthanterlig, vilket krävs för avancerade grepp och fjäderlätta rörelser.
+            </li>
+            <li>
+              <b>Kantfinishen:</b> Korten är skurna med precision för att underlätta "faro shuffles" och se till att de glider smidigt mot varandra utan motstånd.
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>Varför välja Odyssey V3 Aether?</h3>
+          <p>
+            Om du sysslar med <b>Cardistry</b> är detta en av de mest ikoniska kortlekarna du kan äga. 
+            Den diagonala baksidan är legendarisk för hur den förändrar det visuella uttrycket i dina trolleritrick och rörelser. 
+            Det är inte bara en kortlek; det är ett visuellt verktyg skapat för att bryta reglerna för hur en traditionell kortlek ska se ut.
+          </p>
+        </section>
+        
+        <section>
+          <h3>Specifikationer</h3>
+          <ul>
+            <li>
+              <b>Designer:</b> Sergio Roca (Feel The Universe)
+            </li>
+            <li>
+              <b>Storlek:</b> Poker size
+            </li>
+            <li>
+              <b>Finish:</b> Magic Finish / Luxury Stock
+            </li>
+            <li>
+              <b>Special:</b> Minimalistisk design optimerad för visuella rörelser
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source type='video/webm; codecs="av01.0.05M.08"' src="/media/produkt2/video1.webm">
+          <source type="video/mp4" src="/media/produkt2/video1.mp4">
+        </video>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="/omoss.html">Om oss</a>
+      <a href="/kontakt.html">Kontakt</a>
+      <p>CLR Kortlekar</p>
+      <a href="/index.html"><img src="/media/favicon/favicon-96x96.png" alt="CLR Kortlekar logotyp"></a>
+    </div>
+  </footer>
+  <div class="notify-background">
+    <div class="notify-box" id="notify"></div>
+  </div>
+</body>
+</html>
